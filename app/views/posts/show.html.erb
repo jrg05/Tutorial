@@ -14,23 +14,14 @@
   <b>Content:</b>
   <%= @post.content %>
 </p>
+<p> Tags</p>
+  <%= join_tags(@post) %>
 <h2>Comentarios</h2>
 <% render @post.comments%>
 
 <h2>Comentar</h2>
-<%= form_for([@post,@post.comments.build]) do |f| %>
-<div class="field">
-	<% f.label :commenter%></br>
-<	% f.text_field :commenter%>
- <div class="field">
-    <%= f.label :body %><br />
-    <%= f.text_area :body %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
-</div>
+<%= render "comments/form" %>
+  </br>
 
 <%= link_to 'Edit post', edit_post_path(@post) %> |
 <%= link_to 'Back to posts', posts_path %>
