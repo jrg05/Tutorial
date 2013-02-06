@@ -1,3 +1,3 @@
 class Tag < ActiveRecord::Base
-  belongs_to :pots
+  belongs_to :post
 end

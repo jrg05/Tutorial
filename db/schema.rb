@@ -33,11 +33,11 @@ ActiveRecord::Schema.define(:version => 20130205152548) do
 
   create_table "tags", :force => true do |t|
     t.string   "name"
-    t.integer  "pots_id"
+    t.integer  "post_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
-  add_index "tags", ["pots_id"], :name => "index_tags_on_pots_id"
+  add_index "tags", ["post_id"], :name => "index_tags_on_post_id"
 
 end
