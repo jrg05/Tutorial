@@ -11,3 +11,23 @@
  *= require_self
  *= require_tree .
 */
+h1{
+	color: #99CC99;
+}
+th{
+	color: #C0C0C0;
+}
+em{
+	text-decoration: none;
+	color: black;
+}
+link_to{
+	color: black;
+}
+td{
+	color: #778899;
+	text-decoration: none;
+}
+b{
+	color: #4682B4;
+}
